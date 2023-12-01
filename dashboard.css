@@ -1,0 +1,1242 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+   display: flex; 
+    
+
+}
+
+/* THIS IS THE CSS FOR MY SIDE-BAR */
+
+.side-bar{
+    background-color: rgb(16, 16, 56);
+    height: 187w vh;
+    position: static;
+    top: 0px;
+    bottom: 0;
+}
+
+/* .side-bar:hover{
+    width: 18%;
+} */
+
+.image-div{
+    width: 150px;
+    margin: auto;
+    margin-top:20px;
+    display: none;
+    margin-left: 35px;
+    position: sticky;
+    top: 10px;
+}
+
+.image-div img{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+/* ASK QUESTIONS ABOUT THIS TO KNOW WHY THE ICONS ARE OF DIFFERENT SIZES AND WHY THE MARGIN AFTER THE ICON IS NOT THE SAME FOR ALL THE SPAN, ETC */
+/* i{
+    font-size: 18px;
+    background-color: darkorange;
+  margin: 0px;
+  padding: 10px;
+    
+} */
+
+ul{
+    line-height: 30px;
+    padding: 0 20px;
+    margin-top:105px;
+    list-style-type: none;
+    position: sticky;
+    top: 108px;
+}
+
+ul li a{
+    color: white;
+}
+
+ul li a span{
+    margin-left: 12px;
+    text-align: center;
+    display: none;
+    font-size: 14px;
+    
+}
+
+ul li i{
+    font-size: 16px;
+}
+
+
+
+.log-out{
+    position: sticky;
+    top: 517px;
+    background-color: red;
+    margin: 0px 10px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 10px; 
+    width: 60%;
+}
+
+.log-out a{
+    color: white;
+}
+
+.log-out a i{
+    font-size: 16px; 
+}
+
+.log-out a span{
+    margin-left: 12px;
+    display: none;
+    font-size: 14px;
+}
+
+.side-bar:hover .log-out a span{
+    display: inline-block;
+}
+
+.side-bar:hover{
+    width: 20%;
+    /* transition: 3s; */
+}
+
+
+.side-bar:hover ul{
+    margin-top:7px;
+}
+
+ul li:hover{
+    background-color: red;
+    /* padding: 0px 10px; */
+    border-radius: 10px;
+}
+
+.side-bar:hover .image-div{
+    display: inline-block;
+}
+
+.side-bar:hover ul li a span{
+    display: inline-block;
+}
+
+/* SIDE-BAR CSS ENDS HERE */
+
+/* WELCOME HEADER SECTION CSS STARTS HERE */
+
+.profile-pic{
+    width: 40px;
+}
+
+.profile-pic img{
+    width: 100%;
+    padding: 2px;
+    border-radius: 50%;
+
+}
+
+.welcome h1{
+    font-size: 14px;
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+
+.welcome p{
+    font-weight: bold;
+}
+
+/* NOTE: HOMEPAGE IS THE CONTAINER THAT HOUSES ALL THE CONTENT IN MY DESIGN EXCEPT THE SIDE-BAR. IT IS WHERE EVERY OTHER PARENT DIV WILL BE PLACED INTO */
+
+.homepage{
+    position: relative;
+    width: 100%;
+    background-image: url(images/pexels-pixabay-159585.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.homepage-flex{
+    display: flex;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px 5px lightgray;
+}
+
+.my-profileFlex{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.search-profile{
+    position: relative;
+}
+
+.search-profile input{
+    width: 300px;
+    padding: 8px;
+    border: 1px solid rgb(148, 151, 155);
+    border-radius: 8px;
+    outline: none;
+    
+}
+
+/* Check the correct code for this and come back to fix it */
+/* .my-profileFlex input:focus{
+    border: 1px solid rgb(148, 151, 155);
+} */
+
+::placeholder{
+    font-size: 18px;
+    color: rgb(148, 151, 155);
+}
+
+.search-profile button{
+    padding: 7px;
+    border-radius: 8px;
+    background-color: rgb(153, 164, 175);
+    position: absolute;
+  right: 0;
+}
+
+.search-profile button:hover{
+    transform: scale(1.1);
+}
+
+/* WELCOME HEADER SECTION CSS ENDS HERE */
+
+/* STUDENT LEARNING CONTENT AND PAYMENT STATUS DESIGN (MY CARD DESIGN) CSS STARTS HERE */
+
+.card-container{
+    background-color: white;
+    margin-top: 10px;
+    width: 97%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px 5px lightgray;
+}
+
+.card-container h1{
+    font-size: 14px;
+    font-weight:bold;
+    padding-bottom: 5px;  
+}
+
+.card-flex{
+    display: flex;
+    gap: 25px;
+}
+
+.student-card{
+    background-color: rgb(280, 180, 129);
+    width: 24.25%;
+    height: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.student-card:nth-child(2){
+    background-color: rgb(230, 170, 110);
+}
+
+.student-card:nth-child(3){
+    background-color: rgb(201, 162, 123);
+}
+
+.student-card:nth-child(4){
+    background-color: rgb(214, 184, 158);
+}
+
+.student-card:hover{
+    transform: translate(-5px);
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.passcode-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header span i{
+    color: rgb(238, 222, 222);
+    background-color: rgb(16, 16, 56);
+    padding: 5px;
+    border-radius: 50%;
+}
+/* STUDENT LEARNING CONTENT AND PAYMENT STATUS DESIGN (MY CARD DESIGN) CSS ENDS HERE */
+
+
+/* STUDENT COURSE PROGRESS CSS STARTS HERE */
+
+.course-progress{
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 160px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px 5px lightgray;
+}
+
+.course-flex{
+    display: flex;
+    /* background-color: darkmagenta; */
+    width: 98%;
+   margin: auto;
+    gap: 30px;
+    justify-content: center;
+    
+
+}
+
+.content-flex1{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: -5px 2px 5px rgb(16, 16, 56), 6px 1px 5px rgb(229, 223, 223);
+    gap: 30px;
+    width: 60%;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    
+}
+
+.course-progress h1{
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
+.first-div div:nth-child(1){
+    font-weight: bolder;
+} 
+
+.second-div h1:nth-child(1){
+    font-weight: bold;
+}
+
+.second-div h1:nth-child(2){
+    font-weight: lighter;
+}
+
+.third-div div{
+    background-color: rgb(250, 213, 160);
+    font-weight: bolder;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+
+.content-flex2{
+    display: flex;
+    gap: 25px;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px lightgrey, 4px 4px 10px gray;
+}
+
+.fourth-div div{
+    font-weight: bold;
+}
+
+.fifth-div div img{
+    width: 35px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sixth-div h1:nth-child(1){
+    font-weight: bolder;
+}
+
+.sixth-div h1:nth-child(2){
+    font-weight: normal;
+}
+
+.seventh-div div{
+    font-weight: bolder;
+}
+
+/* STUDENT COURSE PROGRESS CSS ENDS HERE */
+
+/*MY UPCOMING CLASSES AND MY COURSES CONTAINER CSS STARTS HERE */
+
+.class-container{
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 97%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px 5px lightgray;
+}
+
+.class-flex{
+    display: flex;
+    height: 250px;
+    padding: 10px;
+    gap: 110px;
+}
+
+.upcoming-classes{
+    width: 45%;
+    height: 305px;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: -5px 2px 5px rgb(16, 16, 56), 6px 1px 5px rgb(229, 223, 223);
+    background-color: white;
+}
+
+.class-title{
+    display: flex;
+    gap: 155px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.class-title h1{
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    margin-left: 35px;
+}
+
+.class-options span h2{
+    display: inline;
+    font-size: 14px;
+    color: rgb(152, 139, 139);
+}
+
+.class-options span i{
+    margin-left: 10px;
+    font-size: 15px;
+    color: rgb(152, 139, 139);
+}
+
+.interaction-details{
+    background-color: white;
+    padding: 5px 15px;
+    width: 85%;
+    height: 125px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    border-radius: 8px;
+    box-shadow: -5px 0px 3px rgb(148, 151, 155), 6px 1px 5px rgb(180, 176, 176);
+
+}
+
+.interaction-details:nth-child(3){
+    box-shadow: -5px 0px 3px rgb(230, 170, 110), 6px 1px 5px rgb(180, 176, 176);
+}
+
+.interaction-section1{
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+
+.interaction-section1 h2{
+    font-size: 14px;
+}
+
+.interaction-section1 h3{
+    font-size: 11px;
+
+}
+
+.interaction-section2{
+    display: flex;
+    gap: 190px;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+
+.interaction-section2 h2{
+    font-size: 14px;
+}
+
+.interaction-section2 h3{
+    font-size: 13px;
+}
+
+.calendar-img{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.calendar-img img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.calendar-img h2{
+    margin-left: 8px;
+    font-size: 14px;
+    color: rgb(152, 139, 139);
+}
+
+.calendar span{
+    align-items: center;
+}
+
+.span1{
+    border-right: 3px solid rgb(108, 108, 108);
+}
+
+.calendar span a{
+    color: rgb(152, 139, 139);
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.calendar span i{
+    color: black;
+    font-size: 12px;
+    /* padding-bottom: 10px; */
+}
+
+
+.my-courses{
+    width: 45%;
+    height: 305px;
+    margin-left: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px rgb(16, 16, 56), -6px 1px 5px rgb(229, 223, 223);
+    background-color: white;
+}
+
+/* UPCOMING CLASSES CSS ENDS HERE... MY COURSES CSS BEGINS NEXT */
+
+
+.course-name{
+    max-width: 90%;
+    height: 50px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses-box{
+    width: 95%;
+    margin: auto;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-type{
+    background-color: rgb(214, 213, 213);
+    height: 200pxpx;
+    width: 27%;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.img-bg1 {
+    background-color: rgb(129, 129, 199);
+    height: 50%;
+    border-radius: 10px;
+    text-align: center;    
+}
+
+.img-bg2 {
+    background-color: rgb(233, 191, 6);
+    height: 50%;
+    border-radius: 10px;
+    text-align: center;    
+}
+
+.img-bg3 {
+    background-color: rgb(241, 133, 178);
+    height: 50%;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.img-bg1 img, .img-bg2 img, .img-bg3 img{
+    width: 45%;
+    margin-top: 10%;
+}
+
+h4 {
+    margin-top: 10px;
+    font-size: 11px;
+    /* margin-bottom: 0; */
+}
+
+.percentage-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 37px;
+}
+
+.unique-btn{
+    background-color: rgb(119, 119, 186);
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    color: #ffffff;
+}
+
+.same-btn{
+    background: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 30px;
+    color: black;
+}
+
+meter {
+    width: 60%;
+}
+
+/*MY UPCOMING CLASSES AND MY COURSES CONTAINER CSS ENDS HERE */
+
+/* MY PROGRESS BAR CSS BEGINS HERE */
+
+.progress-bar{
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px 5px lightgray;
+}
+
+.progress-bar h1{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.progress-flex{
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.progress-cont{
+    background-color: white;
+    width: 32%;
+    padding: 20px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    box-shadow: -5px 0px 3px rgb(148, 151, 155), 6px 1px 5px rgb(180, 176, 176);
+}
+
+.countdown{
+    margin-left: 40px;
+}
+
+.countdown p{
+    font-size: 13px;
+    display: inline-block;
+}
+
+.pee1, .pee3{
+    color: rgb(94, 163, 206);;
+}
+
+.pee2{
+    color: rgb(202, 129, 144);;
+}
+
+.countdown h2{
+    font-size: 20px;
+}
+
+.countdown div h4{
+    font-size: 12px;
+}
+
+.pro-icon1 i{
+    font-size: 25px;
+    color: rgb(94, 163, 206);
+}
+
+.pro-icon2 i{
+    font-size: 25px;
+    color: rgb(230, 170, 110);
+}
+
+.pro-icon3 i{
+    font-size: 25px;
+    color: rgb(202, 129, 144);
+}
+
+.pro-icon1{
+    background-color: rgb(214, 216, 219);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.pro-icon2{
+    background-color: rgb(251, 229, 236);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.pro-icon3{
+    background-color: rgb(251, 222, 233);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+/* MY PROGRESS BAR CSS ENDS HERE */
+/* MY DASHBOARD CSS ENDS HERE */
+
+
+/* THIS IS THE BEGINNING OF MY RESPONSIVENESS */
+
+@media screen and (max-width: 1200px) {
+    .side-bar{
+        height: 190vh;
+    }
+
+    .side-bar:hover{
+        width: 17%;
+    }
+
+    .image-div{
+        width: 100px;
+        margin-left: 12px;
+        
+    }
+
+    ul{
+        padding-left: 20px;
+        
+    }
+
+    ul li a span{
+        margin-left: 5px;
+        font-size: 8px;
+    }
+
+    ul li i{
+        font-size: 9px;
+    }
+
+    .log-out{
+        margin-left: 10px;
+        padding: 5px;
+        border-radius: 10px;
+
+         
+    }
+
+    .log-out a i{
+        font-size: 12px; 
+    }
+
+    .log-out a span{
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .course-flex{
+        gap: 15px;
+    }
+
+    .content-flex1{
+        gap: 20px;
+        padding-top: 5px;
+        padding-left: 8px;
+        padding-bottom: 0px;
+        font-size: 10px;
+        height: 70px;
+        margin-top: 10px;
+        
+    }
+
+    .content-flex2{
+        gap: 20px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        padding-left: 7px;
+        font-size: 10px;
+        height: 70px;
+        margin-top: 10px;
+    }
+
+    /* UPCOMING CLASSES MEDIA QUERY */
+
+    .class-flex{
+        display: flex;
+        height: 250px;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .upcoming-classes{
+        width: 50%;
+        height: 305px;
+        margin-left: 5px;
+        border-radius: 10px;
+        box-shadow: -5px 2px 5px rgb(16, 16, 56), 6px 1px 5px rgb(229, 223, 223);
+        background-color: white;
+    }
+
+    .class-title{
+        gap: 80px;
+        margin-top: 2px;
+        margin-bottom: 4px;
+    }
+    
+    .class-title h1{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    
+    .class-options span h2{
+        font-size: 12px;
+    }
+    
+    .class-options span i{
+        margin-left: 10px;
+    }
+    
+    .interaction-details{
+        padding: 3px 12px;
+        width: 95%;
+        height: 125px;
+        margin-top: 2px;
+    }
+
+    .interaction-section1{
+        gap: 120px;
+        margin: 3px 0px;
+    }
+    
+    
+    .interaction-section1 h2{
+        font-size: 13px;
+    }
+    
+    .interaction-section1 h3{
+        font-size: 11px;
+    
+    }
+    
+    .interaction-section2{
+        gap: 150px;
+        margin: 3px 0px;
+    }
+    
+    
+    .interaction-section2 h2{
+        font-size: 13px;
+    }
+    
+    .interaction-section2 h3{
+        font-size: 11px;
+    }
+
+    .calendar-img{
+        margin-top: 5px;
+    }
+    
+    .calendar-img img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .calendar-img h2{
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    .calendar span a{
+        color: rgb(152, 139, 139);
+        font-size: 12px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .calendar span i{
+        font-size: 10px;
+    }
+    
+    
+    .my-courses{
+        width: 50%;
+    }
+    
+
+    .course-name{
+        max-width: 90%;
+    }
+    
+    .course-type{
+        height: 200px;
+        width: 32%;
+        border-radius: 8px;
+        padding: 12px;
+    }
+    
+    h4 {
+        margin-top: 8px;
+        font-size: 8px;
+    }
+    
+    .percentage-bar {
+        height: 30px;
+    }
+    
+    .unique-btn{
+        height: 32px;
+    }
+
+    .same-btn{
+        height: 32px;
+    }
+    
+    meter {
+        width: 60%;
+    }
+
+    .percentage-bar p{
+        font-size: 11px;
+    }
+
+    .progress-bar h1{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .progress-cont{
+        width: 33%;
+        gap: 40px;
+    }
+    
+    .countdown{
+        margin-left: 40px;
+    }
+
+    .countdown p{
+        display: inline-block;
+        font-size: 12px;
+    }
+    
+    .countdown h2{
+        font-size: 15px;
+    }
+    
+    .countdown div h4{
+        font-size: 10px;
+    }
+    
+    .pro-icon1 i{
+        font-size: 17px;
+    }
+    
+    .pro-icon2 i{
+        font-size: 17px;
+    }
+    
+    .pro-icon3 i{
+        font-size: 17px;
+    }
+    
+    .pro-icon1{
+        padding: 7px 10px;
+    }
+    
+    .pro-icon2{
+        padding: 7px 10px;
+    }
+    
+    .pro-icon3{
+        padding: 7px 10px;
+    }
+   
+}
+
+/* THIS IS THE RESPONSIVENESS FOR TABLETS AND OTHER SIMILAR DEVICES */
+
+@media (max-width: 950px){
+    .side-bar{
+        height: 332vh;
+        width: 11%;
+    }
+
+    .side-bar:hover{
+        width: 11%;
+    }
+
+    .side-bar ul{
+        text-align: center;
+    }
+
+    .log-out{
+        margin-left: 10px;
+    }
+
+    .homepage-flex{
+        line-height: 20px;
+        padding: 8px;
+    }
+
+    .profile-pic{
+        width: 22px;
+        margin-right: 40px;
+    }
+    
+    .profile-pic img{
+        width: 100%;
+        padding: 1px;
+    
+    }
+    
+    .welcome h1{
+        font-size: 12px;
+        font-weight: lighter;
+        padding-bottom: 5px;
+    }
+    
+    .welcome p{
+        font-size: 11px;
+    }
+
+    .my-profileFlex{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .search-profile input{
+        height: 21px;
+        width: 150px;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
+    
+    ::placeholder{
+        font-size: 12px;
+    }
+    
+    .search-profile button{
+        padding: 5px;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-profile button i{
+        font-size: 10px;
+    }
+
+    button {
+        position: relative;
+    }
+
+    button i{
+        position: absolute;
+        bottom: 2px;
+        right: 3px;
+    }
+
+    .card-container{
+        width: 97%;
+        height: 350px;
+    }
+
+    .card-flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .student-card{
+        
+        width: 90%;
+        height: 140px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .side-bar:hover ul li a span{
+        display: none;
+    }
+
+    .side-bar:hover .image-div{
+        display: none;
+    }
+
+    .side-bar:hover .log-out a span{
+        display: none;
+    }
+
+    .side-bar ul li i{
+        font-size: 15px;
+    }
+
+    .course-progress{
+        height: 260px;
+        line-height: 20px;
+    }
+
+    .course-progress h1{
+        text-align: center;
+    }
+
+    .course-flex{
+        display: grid;
+    }
+
+    .content-flex1{
+        width: 100%;
+        gap: 20px;
+        
+    }
+
+    .content-flex2{
+        width: 100%;
+       
+    }
+    
+    .first-div div{
+        font-size: 10px;
+    } 
+    
+    .second-div h1{
+        font-size: 8px;
+    }
+    
+    .second-div h1:nth-child(2){
+        font-size: 6px;
+        font-weight: bold;
+    }
+    
+    .third-div div{
+        padding: 2px 4px;
+        border-radius: 8px;
+        font-size: 8px;
+        margin-right: 30px;
+    }
+
+
+    .class-container{
+        height: 655px;
+    }
+    
+    .class-flex{
+        display: grid;
+        gap: 10px;
+    }
+
+    .upcoming-classes{
+        width: 90%;
+        margin: auto;
+    }
+
+    .my-courses{
+        width: 90%;
+        margin: auto;
+    }
+
+
+    
+    .progress-bar{
+        height: 450px;   
+    }
+
+    .progress-flex{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .progress-cont{
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        gap: 100px;
+     }
+     
+
+}
+
+@media (max-width: 510px){
+    .side-bar{
+        height: 334vh;
+    }
+
+ }
